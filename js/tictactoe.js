@@ -96,7 +96,7 @@ function checkWinConditions() {
     else if (arrayIncludes('2X', '5X', '8X')) {drawWinLine(508, 50, 508, 558) }
         
     //X 6, 4, 2 condition.
-    else if (arrayIncludes('6X', '4X', '2X')) {drawWinLine(100, 508, 558, 90) }
+    else if (arrayIncludes('6X', '4X', '2X')) {drawWinLine(100, 508, 520, 100) }
                     
     //X 0, 4, 8 condition.
     else if (arrayIncludes('0X', '4X', '8X')) {drawWinLine(100, 100, 520, 520) }
