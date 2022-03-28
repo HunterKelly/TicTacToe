@@ -48,7 +48,7 @@ function placeXOrO(squareNumber) {
             //This function disables click for computer choice.
             disableClick();
             //This function waits 1 second before computer places image and enables click
-            setTimeout(function () { computersTurn(); }, 3000)
+            setTimeout(function () { computersTurn(); }, 2000)
         }
         //Returning true is needed for ouyr computersTurn() function to work.
         return true;
@@ -153,7 +153,7 @@ function disableClick() {
     //This makes our body unclickable.
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second.
-    setTimeout(function () {body.style.pointerEvents = 'auto'; }, 3000)
+    setTimeout(function () {body.style.pointerEvents = 'auto'; }, 2000)
 }
 
 //This function takes a string parameter of the path you set earlier for
@@ -268,7 +268,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     animateLineDrawing();
 
     //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
-    setTimeout(function () { clear(); resetGame(); }, 3000);
+    setTimeout(function () { clear(); resetGame(); }, 2000);
 }
 
 //This function resets the game in the event of a tie or a win.
